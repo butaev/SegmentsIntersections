@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SegmentsIntersections", "SegmentsIntersections\SegmentsIntersections.csproj", "{59AB05C5-D0CE-42E2-9C5A-143BCAA4F68B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{926D9B78-6FA0-4D29-8FB0-851E1E62500F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{59AB05C5-D0CE-42E2-9C5A-143BCAA4F68B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59AB05C5-D0CE-42E2-9C5A-143BCAA4F68B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59AB05C5-D0CE-42E2-9C5A-143BCAA4F68B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59AB05C5-D0CE-42E2-9C5A-143BCAA4F68B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{926D9B78-6FA0-4D29-8FB0-851E1E62500F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{926D9B78-6FA0-4D29-8FB0-851E1E62500F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{926D9B78-6FA0-4D29-8FB0-851E1E62500F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{926D9B78-6FA0-4D29-8FB0-851E1E62500F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
