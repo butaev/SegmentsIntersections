@@ -83,7 +83,7 @@ public static class CalculationMethods
     }
 
     /// <summary>Computes intersection of two segments.</summary>
-    /// <returns> object type of intersection, a segment, vector or null if there is no intersection.</returns>
+    /// <returns>Intersection result or null if there is no intersection.</returns>
     public static IntersectionResult? Intersect(Segment3D segment1, Segment3D segment2)
     {
         if (segment1.Length <= Consts.Epsilon || segment2.Length <= Consts.Epsilon)
@@ -100,8 +100,8 @@ public static class CalculationMethods
     }
 
     /// <summary>Computes intersection of two segments, one of which has zero length.</summary>
-    /// <returns> vector or null if there is no intersection.</returns>
-    private static IntersectionResult? IntersectSegmentWithPoint(Segment3D segment1, Segment3D segment2)
+    /// <returns>PointIntersectionResult or null if there is no intersection.</returns>
+    private static PointIntersectionResult? IntersectSegmentWithPoint(Segment3D segment1, Segment3D segment2)
     {
         if (segment1.Length <= Consts.Epsilon)
         {
@@ -126,7 +126,7 @@ public static class CalculationMethods
     }
 
     /// <summary>Computes intersection of two segments passing through same line.</summary>
-    /// <returns>intersection as a segment or vector or null if there is none.</returns>
+    /// <returns>Intersection result or null if there is no intersection.</returns>
     public static IntersectionResult? SegmentIntersect(Segment3D segment1, Segment3D segment2)
     {
         return GetSegmentIntersect(segment1, segment2) ?? GetSegmentIntersect(segment2, segment1);
@@ -160,8 +160,8 @@ public static class CalculationMethods
     }
 
     /// <summary>Computes intersection of segments in plane.</summary>
-    /// <returns>Vector3D if there is an intersection, otherwise returns null.</returns>
-    public static IntersectionResult? IntersectInPlane(Segment3D segment1, Segment3D segment2)
+    /// <returns>PointIntersectionResult if there is an intersection, otherwise returns null.</returns>
+    public static PointIntersectionResult? IntersectInPlane(Segment3D segment1, Segment3D segment2)
     {
         if (!InSamePlane(segment1, segment2))
         {
@@ -270,7 +270,7 @@ public static class CalculationMethods
         return ApproximatelyEqual(cross1, cross2);
     }
 
-    /// <summary>Computes if segment contains the point.</summary>                                                     
+    /// <summary>Calculates whether the segment contains the point.</summary>                                                     
     /// <returns>true if contains, false otherwise.</returns>                                                          
     private static bool Contains(this Segment3D segment, Vector3D vector)
     {
