@@ -27,13 +27,6 @@ internal static class Program
     private static void PrintIntersectionResult(Segment3D s1, Segment3D s2)
     {
         var intersection = CalculationMethods.Intersect(s1, s2);
-        if (intersection != null)
-        {
-            Console.WriteLine(intersection);
-        }
-        else
-        {
-            Console.WriteLine("There is no intersection");
-        }
+        Console.WriteLine(intersection?.ToString() ?? "There is no intersection");
     }
 }
